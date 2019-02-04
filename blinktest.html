@@ -1,0 +1,64 @@
+
+<HTML>
+<HEAD>
+
+<!-- Código descargado gratuitamente de HTMLpoint, el sitio italiano del web publishing
+                                   http://www.htmlpoint.com -->
+
+<TITLE>Troleo Epico </TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+
+
+
+function blinkOn(){
+
+        theWin.document.bgColor = "0000ff"
+
+        nTimes++
+
+        JSCTimeOutID = window.setTimeout("blinkOff()",50);
+
+}
+
+
+
+function blinkOff(){
+
+        theWin.document.bgColor = "FFFFFF"
+
+        if (nTimes < 3)
+
+                JSCTimeOutID = window.setTimeout("blinkOn()",50);
+
+        else theWin.history.go(0)
+
+}
+
+function blinkit(aWin)
+
+{
+
+        nTimes = 0
+
+        theWin = aWin
+
+        JSCTimeOutID = window.setTimeout("blinkOn()",50);
+
+}
+
+</SCRIPT>
+
+
+</HEAD>
+
+<BODY bgcolor="white">
+
+ 
+<CENTER><FORM><INPUT TYPE="BUTTON" VALUE="Troleo" onClick="blinkit(self)">
+
+</FORM></CENTER>
+
+</body>
+</html>

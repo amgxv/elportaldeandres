@@ -1,0 +1,142 @@
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="estilo.css" />
+<title>El Portal de Andrés</title>
+<link rel="shortcut icon" href="/imgs/icono.ico" />
+<center><img src="./imgs/elportaldeandres.jpg" alt="Bienvenidos al Portal de Andrés"> </center></head>
+<body>
+<body style="background:#FF0000">
+<div style="position: absolute; left: 0px; width: 10%;">
+<ul id="navi">
+<ul>
+  <li><a href="#">Inicio</a></li>
+  <li><a href="#">¿Quien Soy?</a></li>
+  <li><a href="blinktest.html">Botón del Trolleo</a></li>
+</ul>
+<a href="https://www.youtube.com/watch?v=VSPtHIO8yQw"><img src="./imgs/españa.gif" alt="ESPAÑA" height="148" width="205" style="position:fixed;bottom:30px;left:0px;"></a>
+</div>
+<div style="position: absolute; right: 0px; top: 10px; width: 5%;">
+<center><a href="http://bloginelblogin.blogspot.com.es"><img src="./imgs/feise.png" alt="Mierda" height="146" width="84" style="margin-left:-60px"></a></center>
+<!-- Scrobbler De Melchor -->
+<div class="lastfm" style="bottom: 10px;margin-left: -250px;width: 300px;display: block;position: fixed;"></div>
+
+<script src="http://code.jquery.com/jquery-git2.min.js"></script>
+
+<script src="https://dl.dropboxusercontent.com/sh/4etbvml1tigbhhw/iH0cuTaOkT/LastSongs/LastSongs.js"></script>
+<script>$(".lastfm").lastSongs("technologic15", "201a5fdd42fd8cc5577fd0646b3e8ba7")
+.colorDeFondo(32, 30, 30, 0.9)
+.colorDeLaCabecera(191, 222, 244, 1)
+.colorDelTitulo(0, 0, 0, 1)
+.colorDelArtista(0, 100, 0, 1)
+.colorDelAlbum(123, 123, 123, 1)
+.colorDeCancion(228, 226, 165, 1)
+.setWidth(300)
+.applyStyle();</script>
+<div style="position:fixed;top:0;left:100px;background:rgb(200,200,200);border-radius:0 0 4px 4px;padding:5px">
+    <a class="mostrar" href="#"><span>Mostrar</span></a> <a>LastFM Scrobbler</a>
+</div>
+<script>
+$('a.mostrar').data('s', 'false').click(function(e) {
+    e.preventDefault();
+    if($(this).data('s') == 'true') {
+        $('.lastfm').stop().fadeOut(600);
+        $(this).data('s', 'false');
+        $(this).find('span').text('Mostrar').css({color: 'purple'});
+    } else if($(this).data('s') == 'false') {
+        $('.lastfm').stop().fadeIn(600);
+        $(this).data('s', 'true');
+        $(this).find('span').text('Ocultar').css({color: 'red'});
+    }
+    return false;
+});
+$('.lastfm').fadeOut(10);
+</script>
+</div>
+<div style="padding: 10px; margin: 0 auto; width: 85%; text-align: justify;">
+<!-- Búsqueda Google -->
+<center>
+<FORM method=GET action="http://www.google.com/search">
+<TABLE bgcolor="black"><tr><td>
+<INPUT TYPE=text name=q size=80 maxlength=255 value="">
+<INPUT TYPE=hidden name=hl value=es>
+<INPUT type=submit name=btnG VALUE="Búsqueda Google">
+</td></tr></TABLE>
+</FORM>
+</center>
+<!-- Búsqueda Google -->
+<div class="SOYO" style="position: absolute;top: 420px;left: 30%;opacity: 0;font-size: 100px;color: white;">Soy Andrés</div>
+<script>
+$($('#navi').find('li').get(1)).find('a').click(function(e) {
+    $('.SOYO').stop().animate({opacity: 1}, 1000, function() {
+        $('.SOYO').delay(2000).animate({opacity: 0}, 500);
+    });
+});
+</script>
+<span style="color: white;">
+<td><center><a href="https://www.facebook.es"><img src="./imgs/fb.png" alt="Facebook" height="48" width="48"></a>
+<a href="http://tweetdeck.twitter.com/"><img src="./imgs/tdeck.png" alt="Tweetdeck" height="48" width="48"></a>
+<span style="position: relative;
+bottom: 15px;">&nbsp; &nbsp;Social &nbsp; &nbsp;</span>
+</tr>
+<td>
+<a href="http://www.lastfm.es/user/technologic15"><img src="./imgs/lastfm.png" alt="Last.FM" height="48" width="48"></a>
+<a href="http://www.soundcloud.com"><img src="./imgs/scloudicon.png" alt="Soundcloud" height="48" width="48"></a>
+<a href="https://play.spotify.com/"><img src="./imgs/spotify.png" alt="Spotify" height="48" width="48"></a>
+<a href="http://www.grooveshark.com/"><img src="./imgs/grooveshark.png" alt="Grooveshark" height="48" width="48"></a>
+<a href="http://www.acidvibesound.blogspot.com.es/"><img src="./imgs/av.png" alt="Acid Vibe" height="48" width="48"></a>
+<span style="position: relative;
+bottom: 15px;">&nbsp; &nbsp;Música &nbsp; &nbsp;</span>
+</tr>
+<td>
+<a href="http://www.iesllompart.cat/virtual/"><img src="./imgs/moodle.png" alt="Moodle" height="48" width="48"></a>
+<a href="http://www.wikipedia.org/"><img src="./imgs/wikipedia.jpg" alt="Wikipedia" height="48" width="48"></a>
+<span style="position: relative;
+bottom: 15px;">&nbsp; &nbsp;Estudio &nbsp; &nbsp;</span>
+</tr>
+<td>
+<a href="https://mail.google.com/"><img src="./imgs/gmail.png" alt="GMail" height="48" width="48"></a>
+<a href="https://drive.google.com"><img src="./imgs/drive.png" alt="Google Drive" height="48" width="48"></a>
+<a href="http://www.youtube.com/"><img src="./imgs/yutu.png" alt="YouTube" height="48" width="48"></a>
+<span style="position: relative;
+bottom: 15px;">&nbsp; &nbsp;Google Apps &nbsp; &nbsp;</span>
+</tr>
+<br>
+<td>
+<a href="http://www.twitch.tv/"><img src="./imgs/twitch.png" alt="Twitch" height="48" width="48"></a>
+<a href="http://onotvonline.es/"><img src="./imgs/tvonline.png" alt="ONOTVONLINE" height="48" width="48"></a>
+<span style="position: relative;
+bottom: 15px;">&nbsp; &nbsp;Vídeo &nbsp; &nbsp;</span>
+</tr>
+<td>
+<a href="https://www.flickr.com/"><img src="./imgs/flickr.png" alt="flickr" height="48" width="48"></a>
+<span style="position: relative;
+bottom: 15px;">&nbsp; &nbsp;Fotografía &nbsp; &nbsp;</span>
+</tr>
+<td>
+<a href="http://www.ebay.es/"><img src="./imgs/ebay.png" alt="eBay" height="48" width="48"></a>
+<a href="https://www.amazon.es/"><img src="./imgs/amazon.png" alt="Amazon" height="48" width="48"></a>
+<span style="position: relative;
+bottom: 15px;">&nbsp; &nbsp;Compras &nbsp; &nbsp;</span>
+</tr>
+<td>
+<a href="http://bandaancha.eu/"><img src="./imgs/ba.png" alt="Bandaancha" height="48" width="48"></a>
+<a href="http://www.adslzone.net/"><img src="./imgs/adslzone.png" alt="AdslZone" height="48" width="48"></a>
+<span style="position: relative;
+bottom: 15px;">&nbsp; &nbsp;Foros Internet &nbsp; &nbsp;</span>
+</tr>
+<td>
+<a href="http://www.speedtest.net/"><img src="./imgs/speedtest.png" alt="Speedtest" height="48" width="48"></a>
+<a href="http://www.testdevelocidad.es/"><img src="./imgs/testdevelocidades.png" alt="Test de Velocidad" height="48" width="48"></a>
+<span style="position: relative;
+bottom: 15px;">&nbsp; &nbsp;Tests de Velocidad &nbsp; &nbsp;</span>
+</tr>
+<td>
+<a href="https://kickass.to/"><img src="./imgs/kah.png" alt="Kickass" height="48" width="48"></a>
+<a href="http://www.thepiratebay.se/"><img src="./imgs/thepiratebay.png" alt="Spotify" height="48" width="48"></a>
+<span style="position: relative;
+bottom: 15px;">&nbsp; &nbsp;Torrent &nbsp; &nbsp;</span></tr></center>
+<DESACTIVADOaudio src="./music/furelise.mp3" autoplay="autoplay" loop="loop">
+</audio>
+</body>
+</html>

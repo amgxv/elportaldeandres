@@ -1,0 +1,29 @@
+	body {
+	  font-family: 'Oswald', sans-serif;
+	  background-color: black;
+	}
+	
+#navi {  
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#navi li {
+	margin:2px;
+	padding:0; 
+	float:left;
+}
+#navi li a {
+	display:block; 
+	width:100px;
+	padding:4px 0;
+	text-decoration:none;
+	text-align:left;
+	font-size:11px;
+	color:#FFFFFF;
+	background-color:#000000;
+}
+#navi li a:hover {
+	color:#99CC00;
+	background-color:#003366;
+}a > img { transition: -webkit-transform .25s linear; transition: -moz-transform .25s linear; transition: -ms-transform .25s linear; transition: -o-transform .25s linear;}a > img:hover { -webkit-transform: scale(1.2) rotate(360deg); -moz-transform: scale(1.2) rotate(360deg); -ms-transform: scale(1.2) rotate(360deg); -o-transform: scale(1.2) rotate(360deg); } a > img {    transition: -webkit-transform .25s linear;    transition: -moz-transform .25s linear;    transition: -ms-transform .25s linear;    transition: -o-transform .25s linear;    transition: transform .25s linear;}a > img:hover {    -webkit-transform: scale(1.2) rotate(360deg);    -moz-transform: scale(1.2) rotate(360deg);    -ms-transform: scale(1.2) rotate(360deg);    -o-transform: scale(1.2) rotate(360deg);    transform: scale(1.2) rotate(360deg);}
